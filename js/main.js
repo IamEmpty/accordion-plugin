@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('.panel-group').accordionWithLinks({
-        animationDuration: 400
+        duration: 400
     });
 });
