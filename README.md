@@ -12,6 +12,10 @@ To begin you need add jQuery script, if you have not done it before.
 
 After this you need initialize
 
+## First step
+
+    bower install
+
 ## Tests
 
     jshint js/accordion-plugin.js
