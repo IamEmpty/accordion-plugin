@@ -1,0 +1,24 @@
+{
+  "name": "accordion-plugin",
+  "description": "accordion jquery plugin",
+  "main": "README.md",
+  "authors": [
+    "IamEmpty"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery"
+  ],
+  "homepage": "https://github.com/IamEmpty/accordion-plugin",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

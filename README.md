@@ -10,4 +10,8 @@ To begin you need add jQuery script, if you have not done it before.
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 ```
 
-After this you need initialize 
+After this you need initialize
+
+## Tests
+
+    jshint js/accordion-plugin.js
