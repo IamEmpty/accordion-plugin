@@ -1,6 +1,6 @@
 {
   "name": "accordion-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "accordion js",
   "main": "src/accordion-plugin.js",
   "scripts": {

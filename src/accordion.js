@@ -7,7 +7,7 @@
 			duration: 500,
 			easing: 'swing',
 			divHeading: '.card-header',  // Div which we need tracking on click
-			divCollapse: '.collapse'       // Div which we need to hide or show on click
+			divCollapse: '.collapse'     // Div which we need to hide or show on click
 		};
 
 		return this.each(function() {
@@ -19,7 +19,7 @@
 				let $this = $(this);
 				let currentID = $this.attr('id');
 
-				if(window.sessionStorage.getItem(currentID) == currentID) {
+				if(window.sessionStorage.getItem(currentID) === currentID) {
 					$this.show(settings.duration, settings.easing);
 				}
 			});
