@@ -1,24 +1,24 @@
 {
   "name": "accordion-plugin",
-  "version": "0.0.1",
-  "description": "accordion jquery plugin",
-  "main": "README.md",
+  "version": "1.0.0",
+  "description": "accordion js",
+  "main": "src/accordion-plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IamEmpty/accordion-plugin.git"
+    "url": "git+https://github.com/pure-js/accordion-plugin.git"
   },
   "keywords": [
-    "jquery"
+    "accordion"
   ],
-  "author": "IamEmpty",
+  "author": "pure-js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IamEmpty/accordion-plugin/issues"
+    "url": "https://github.com/pure-js/accordion-plugin/issues"
   },
-  "homepage": "https://github.com/IamEmpty/accordion-plugin#readme",
+  "homepage": "https://github.com/pure-js/accordion-plugin#readme",
   "devDependencies": {
     "jshint": "^2.8.0"
   }

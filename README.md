@@ -1,21 +1,19 @@
-Accordion plugin
-================
-For using this plugin you need in jQuery plugin.
-Plugin is compatible with jQuery 1.11.0.
-Another version of jQuery is not tested currently.
-
-To begin you need add jQuery script, if you have not done it before.
+# Accordion js
+Simple accordion js. Bootstrap 4 accordion fork adding hash of opened tab
+## Usage
+Just put at the end of body.
 ```html
-<!-- Add jQuery library -->
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="accordion.min.js"></script>
+</body>
 ```
 
 After this you need initialize
 
-## First step
+## Contribution
 
     bower install
+    npm install
 
 ## Tests
 
-    jshint js/accordion-plugin.js
+    jshint src/accordion.js

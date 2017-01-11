@@ -1,15 +1,15 @@
 {
   "name": "accordion-plugin",
-  "description": "accordion jquery plugin",
+  "description": "accordion js",
   "main": "README.md",
   "authors": [
-    "IamEmpty"
+    "pure-js"
   ],
   "license": "MIT",
   "keywords": [
-    "jquery"
+    "accordion"
   ],
-  "homepage": "https://github.com/IamEmpty/accordion-plugin",
+  "homepage": "https://pure-js.github.io/accordion-plugin",
   "moduleType": [],
   "ignore": [
     "**/.*",
@@ -18,7 +18,11 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "~3.3.6"
+  "devDependencies": {
+    "prism": "^1.6.0",
+    "bootstrap": "v4.0.0-alpha.6"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }
