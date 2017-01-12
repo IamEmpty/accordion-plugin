@@ -7,7 +7,8 @@
 			duration: 500,
 			easing: 'swing',
 			divHeading: '.card-header',  // Div which we need tracking on click
-			divCollapse: '.collapse'     // Div which we need to hide or show on click
+			divCollapse: '.show',    // Div which we need to hide or show on click
+			show: '.show'
 		};
 
 		return this.each(function() {
@@ -25,7 +26,9 @@
 			});
 
 
-			$heading.on('click', function() {
+			$heading.on('click', function(e) {
+			  e.preventDefault();
+
 				let $this = $(this);
 				let targetID = $(this).next().attr('id');
 

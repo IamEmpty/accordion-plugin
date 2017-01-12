@@ -1,5 +1,5 @@
 {
-  "name": "accordion-plugin",
+  "name": "accordion-js",
   "version": "1.0.0",
   "description": "accordion js",
   "main": "src/accordion-plugin.js",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pure-js/accordion-plugin#readme",
   "devDependencies": {
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "prismjs": "^1.6.0"
   }
 }
