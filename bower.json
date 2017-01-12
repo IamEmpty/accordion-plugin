@@ -1,7 +1,7 @@
 {
   "name": "accordion-js",
   "description": "accordion js",
-  "main": "README.md",
+  "main": "src/accordion.js",
   "authors": [
     "pure-js"
   ],

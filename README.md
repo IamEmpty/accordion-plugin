@@ -15,7 +15,13 @@ After this you need initialize
 
     bower install
     npm install
+    <!-- gulp -->
 
 ## Tests
 
     jshint src/accordion.js
+
+
+## Deploy
+
+    gulp deploy
