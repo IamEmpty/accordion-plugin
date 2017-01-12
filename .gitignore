@@ -1,6 +1,9 @@
 # Build
 build/
 
+# Deploy
+.publish
+
 # WebStorm
 .idea/
 
