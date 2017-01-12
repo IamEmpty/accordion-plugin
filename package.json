@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pure-js/accordion-plugin#readme",
   "devDependencies": {
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "prismjs": "^1.6.0"
   }
 }
