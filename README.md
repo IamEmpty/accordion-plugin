@@ -1,5 +1,7 @@
 # Accordion js
-Simple accordion js. Bootstrap 4 accordion fork adding hash of opened tab
+Simple accordion.js based on Bootstrap 4 accordion providing possibility to add hash of opened tab
+## Differences with Bootstrap collapse accordion
+Possibility to use hashes in url
 ## Usage
 Just put at the end of body.
 ```html
