@@ -1,5 +1,5 @@
-(function ($) {
-  $.fn.accordionWithLinks = function (options) {
+(function accordionPlugin($) {
+  $.fn.accordionWithLinks = function coreFn(options) {
     const defaults = {
       duration: 500,
       easing: 'swing',
@@ -8,12 +8,12 @@
       show: '.show',
     };
 
-    return this.each(function () {
+    return this.each(function eachAccordion() {
       const settings = $.extend({}, defaults, options);
       const $collapse = $(settings.divCollapse, this);
       const $heading = $(settings.divHeading, this);
 
-      $collapse.each(function () {
+      $collapse.each(function getFromStorage() {
         const $this = $(this);
         const currentID = $this.attr('id');
 
@@ -23,7 +23,7 @@
       });
 
 
-      $heading.on('click', function (e) {
+      $heading.on('click', function clickAction(e) {
         e.preventDefault();
 
         const $this = $(this);
@@ -49,15 +49,15 @@
       const hash = window.location.hash.substring(1);
 
       // All link in heading accordion block
-      const linkIndivHeading = settings.divHeading + ' a';
+      const linkIndivHeading = `${settings.divHeading} + a`;
 
       // Hash found
       if (hash.length > 0) {
-        $(linkIndivHeading).each(function () {
+        $(linkIndivHeading).each(function eachHash() {
           const $this = $(this);
           const targetID = $this.closest(settings.divHeading).next().attr('id');
 
-          if ($this.attr('href') === '#' + hash) {
+          if ($this.attr('href') === `# + ${hash}`) {
             $this.closest(settings.divHeading).next().show(settings.duration, settings.easing);
             sessionStorage.setItem(targetID, targetID);
           }

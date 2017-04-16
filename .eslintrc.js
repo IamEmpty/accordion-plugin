@@ -6,5 +6,8 @@ module.exports = {
     },
     "plugins": [
         "import"
-    ]
+    ],
+    "rules": {
+      "no-param-reassign": [2, { "props": false }]
+    }
 };
