@@ -4,14 +4,14 @@
       duration: 500,
       easing: 'swing',
       divHeading: '.card-header',  // Div which we need tracking on click
-      divCollapse: '.show',    // Div which we need to hide or show on click
-      show: '.show'
+      divCollapse: '.show',        // Div which we need to hide or show on click
+      show: '.show',
     };
 
     return this.each(function () {
-      const settings = $.extend( {}, defaults, options),
-        $collapse = $(settings.divCollapse, this),
-        $heading = $(settings.divHeading, this);
+      const settings = $.extend({}, defaults, options);
+      const $collapse = $(settings.divCollapse, this);
+      const $heading = $(settings.divHeading, this);
 
       $collapse.each(function () {
         const $this = $(this);
