@@ -5,16 +5,16 @@ const gulp = require('gulp'),
   build = require('./gulp/tasks/build'),
   del = require('del');
 
-const clean = () => del([ paths.build, paths.dev, paths.deploy ]);
+const clean = () => del([paths.build, paths.dev, paths.deploy]);
 exports.clean = clean;
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('dev', dev);
 gulp.task('build', build);
-gulp.task('default', gulp.series('dev'));
+gulp.task('default', dev);
 
 function copy() {
-  let toCopy = [
+  const toCopy = [
     'src/*.js',
     'index.html',
     'bower_components/bootstrap/dist/css/bootstrap.min.css',
@@ -23,7 +23,7 @@ function copy() {
     'bower_components/bootstrap/dist/js/bootstrap.min.js',
     'node_modules/prismjs/prism.js',
   ];
-  return gulp.src(toCopy, {base: '.'})
+  return gulp.src(toCopy, { base: '.' })
     .pipe(gulp.dest(paths.build));
 }
 
