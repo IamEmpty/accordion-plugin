@@ -1,7 +1,9 @@
-# Accordion js
+# Accordion.js
 Simple accordion.js based on Bootstrap 4 accordion providing possibility to add hash of opened tab
+
 ## Differences with Bootstrap collapse accordion
 Possibility to use hashes in url
+
 ## Usage
 Just put at the end of body.
 ```html
@@ -13,15 +15,13 @@ After this you need initialize
 
 ## Contribution
 
-    bower install
     npm install
-    <!-- gulp -->
+    npm start
 
 ## Tests
 
-    jshint src/accordion.js
-
+    npm test
 
 ## Deploy
 
-    gulp deploy
+    npm run deploy
