@@ -6,28 +6,39 @@ const plugins = require('gulp-load-plugins')();
 
 // Get one .less file and render
 function css() {
-  return gulp.src(paths.less)
-    .pipe(plugins.rename('main.min.css'))
-    .pipe(plugins.less({
-      compress: true
+  return gulp.src(paths.buildf.css)
+    .pipe(plugins.rename({
+      extname: '.min.css',
     }))
-    .pipe(gulp.dest(paths.dev));
+    // .pipe(plugins.less({
+    //   compress: true
+    // }))
+    .pipe(gulp.dest(paths.build));
 }
 
 function html() {
-  return gulp.src(paths.pug)
-    .pipe(plugins.pug())
-    .pipe(gulp.dest(paths.dev));
+  return gulp.src(paths.buildf.pug)
+    .pipe(plugins.rename('index.html'))
+    .pipe(plugins.pug({
+      compress: true,
+    }))
+    .pipe(gulp.dest(paths.build));
 }
 
 function js() {
   return gulp.src(paths.js)
-    .pipe(plugins.rename('main.min.js'))
-    .pipe(plugins.babel({
-      presets: ['es2015']
+    .pipe(plugins.rename({
+      extname: '.min.js',
     }))
-    .pipe(plugins.uglify())
-    .pipe(gulp.dest(paths.dev));
+    .pipe(plugins.babili({
+      mangle: false,
+    }))
+    .pipe(gulp.dest(paths.build));
 }
 
-module.exports = gulp.series(html, css, js);
+function copy() {
+  return gulp.src(paths.copyToDist)
+    .pipe(gulp.dest(paths.build));
+}
+
+module.exports = gulp.series(html, js, css, copy);

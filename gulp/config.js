@@ -1,16 +1,35 @@
 module.exports = {
   paths: {
-    pug: ['index.pug', 'test/test.pug'],
+    devf: {
+      pug: [
+        'index-dev.pug',
+      ],
+    },
+    buildf: {
+      pug: [
+        'index-build.pug',
+      ],
+      css: [
+        'bower_components/bootstrap/dist/css/bootstrap.css',
+        'node_modules/prismjs/themes/prism.css',
+      ],
+    },
     less: 'src/main.less',
     lessWatch: 'src/*.less',
-    js: 'src/main.js',
-    copy: [
+    js: [
       'src/*.js',
-      'bower_components/bootstrap/dist/css/bootstrap.min.css',
+      'node_modules/prismjs/prism.js',
+    ],
+    copy: [
+      'bower_components/bootstrap/dist/css/bootstrap.css',
+      'bower_components/bootstrap/dist/css/bootstrap.css.map',
       'node_modules/prismjs/themes/prism.css',
       'bower_components/tether/dist/js/tether.min.js',
+      'bower_components/bootstrap/dist/js/bootstrap.js',
+    ],
+    copyToDist: [
+      'bower_components/tether/dist/js/tether.min.js',
       'bower_components/bootstrap/dist/js/bootstrap.min.js',
-      'node_modules/prismjs/prism.js',
     ],
     dev: '.tmp/',
     build: 'build/',

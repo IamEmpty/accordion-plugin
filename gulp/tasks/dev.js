@@ -18,8 +18,9 @@ function css() {
 }
 
 function html() {
-  return gulp.src(paths.pug)
+  return gulp.src(paths.devf.pug)
     .pipe(plugins.plumber())
+    .pipe(plugins.rename('index.html'))
     .pipe(plugins.pug())
     .pipe(gulp.dest(paths.dev));
 }

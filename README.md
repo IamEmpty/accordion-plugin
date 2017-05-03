@@ -27,3 +27,7 @@ accordionWithLinks();
 ## Deploy
 
     npm run deploy
+
+## Clean all temporary folders
+
+    npm run clean
