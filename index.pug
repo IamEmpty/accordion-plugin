@@ -1,0 +1,105 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='utf-8')
+    title Accordion plugin documentation
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='node_modules/prismjs/themes/prism.css')
+  body(data-spy='scroll', data-target='#bs-example-navbar-collapse-1', data-offset='170')
+    header
+      nav.navbar.navbar-toggleable-md.fixed-top.navbar-inverse.bg-primary(role='navigation')
+        .container
+          a.navbar-brand(href='#') Accordion.js
+          #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav
+              li.nav-item.active
+                a.nav-link(href='#home', data-offset='70') Description
+              li.nav-item
+                a.nav-link(href='#examples') Examples
+              li.nav-item
+                a.nav-link(href='#options') Options
+              li.nav-item
+                a.nav-link(href='#faq') FAQ
+          form.form-inline
+            button.btn.btn-outline-success(type='button') Download
+    main.container
+      .row
+        .col-md-12
+          h1#home Accordion plugin can collapse your divs
+          p Latest version is 0.8.5
+          p
+            | This plugin will remember about collapsed div and will open collapsed object on a hash
+      .row
+        .col-md-12
+          h2 Bootstrap default accordion example
+          #accordion(role='tablist', aria-multiselectable='true')
+            .card
+              #headingOne.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Collapsible Group Item #1
+              #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne')
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .card
+              #headingTwo.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') Collapsible Group Item #2
+              #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .card
+              #headingThree.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree') Collapsible Group Item #3
+              #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree')
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      .row
+        .col-md-12
+          h2 Accordion.js example
+          .accordion(role='tablist', aria-multiselectable='true')
+            .card
+              .card-header
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne') Collapsible Group Item #1
+              #collapse1.collapse.show
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .card
+              .card-header
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo') Collapsible Group Item #2
+              #collapse2.collapse
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .card
+              .card-header
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree') Collapsible Group Item #3
+              #collapse3.panel-collapse.collapse
+                .card-block
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      .row
+        .col-md-12
+          p And initialize plugin
+          pre.
+            \n
+
+          p All supported params:
+          pre.
+            \n
+
+          p In this option you can change amount of show
+          pre.
+            \n
+
+          pre.source_info.
+            \n
+
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=', crossorigin='anonymous')
+    script(src='bower_components/tether/dist/js/tether.min.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='node_modules/prismjs/prism.js')
+    script(src='src/accordion.js')
+    script(src='src/main.js')

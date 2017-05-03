@@ -1,11 +1,11 @@
 module.exports = {
   paths: {
-    pug: 'src/index.pug',
+    pug: ['index.pug', 'test/test.pug'],
     less: 'src/main.less',
     lessWatch: 'src/*.less',
     js: 'src/main.js',
     dev: '.tmp/',
     build: 'build/',
-    deploy: '.publish'
-  }
+    deploy: '.publish',
+  },
 };

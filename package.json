@@ -4,7 +4,8 @@
   "description": "accordion js",
   "main": "src/accordion.js",
   "scripts": {
-    "start": "gulp test",
+    "start": "gulp dev",
+    "build": "gulp build",
     "test": "eslint src/accordion.js",
     "deploy": "gulp deploy",
     "postinstall": "bower install"
@@ -30,7 +31,13 @@
     "eslint-plugin-import": "^2.2.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
     "prismjs": "^1.6.0"
+  },
+  "dependencies": {
+    "gulp-load-plugins": "^1.5.0"
   }
 }

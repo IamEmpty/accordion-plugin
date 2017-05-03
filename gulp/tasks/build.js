@@ -1,10 +1,8 @@
-const gulp = require('gulp'),
-  config = require('../config'),
-  paths = config.paths,
-  names = config.names,
-  plugins = require('gulp-load-plugins')();
+const gulp = require('gulp');
+const config = require('../config');
 
-module.exports = gulp.series(html, css, js);
+const paths = config.paths;
+const plugins = require('gulp-load-plugins')();
 
 // Get one .less file and render
 function css() {
@@ -31,3 +29,5 @@ function js() {
     .pipe(plugins.uglify())
     .pipe(gulp.dest(paths.dev));
 }
+
+module.exports = gulp.series(html, css, js);

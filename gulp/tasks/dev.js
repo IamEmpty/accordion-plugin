@@ -1,11 +1,10 @@
 const gulp = require('gulp'),
   config = require('../config'),
   paths = config.paths,
-  names = config.names,
   plugins = require('gulp-load-plugins')(),
   browserSync = require('browser-sync').create();
 
-module.exports = gulp.series(html, css, js, serve, watch);
+module.exports = gulp.series(html, js, serve, watch);
 
 // Get one .less file and render
 function css() {
@@ -14,7 +13,7 @@ function css() {
     .pipe(plugins.rename('main.min.css'))
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.less({
-      compress: false
+      compress: false,
     }))
     .pipe(plugins.sourcemaps.write(''))
     .pipe(gulp.dest(paths.dev));

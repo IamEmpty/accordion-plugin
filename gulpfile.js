@@ -28,6 +28,6 @@ function copy() {
 }
 
 gulp.task('deploy', gulp.series(copy, () =>
-  gulp.src(paths.build + '**/*')
+  gulp.src(`${paths.build} + **/*`)
     .pipe(ghPages())
 ));

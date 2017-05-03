@@ -1,5 +1,5 @@
 $(document).ready(function() {
   $('.accordion').accordionWithLinks({
-    duration: 400
+    duration: 400,
   });
 });

@@ -1,6 +1,9 @@
 # Build
 build/
 
+# Development build
+.tmp/
+
 # Deploy
 .publish
 
