@@ -4,8 +4,8 @@ html
     meta(charset='utf-8')
     title Accordion plugin documentation
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='node_modules/prismjs/themes/prism.css')
+    link(rel='stylesheet', href='bootstrap.min.css')
+    link(rel='stylesheet', href='prism.css')
   body(data-spy='scroll', data-target='#bs-example-navbar-collapse-1', data-offset='170')
     header
       nav.navbar.navbar-toggleable-md.fixed-top.navbar-inverse.bg-primary(role='navigation')
@@ -32,7 +32,7 @@ html
             | This plugin will remember about collapsed div and will open collapsed object on a hash
       .row
         .col-md-12
-          h2 Bootstrap default accordion example
+          h2#examples Bootstrap default accordion example
           #accordion(role='tablist', aria-multiselectable='true')
             .card
               #headingOne.card-header(role='tab')
@@ -83,23 +83,24 @@ html
       .row
         .col-md-12
           p And initialize plugin
-          pre.
-            \n
-
-          p All supported params:
-          pre.
-            \n
-
-          p In this option you can change amount of show
-          pre.
-            \n
-
-          pre.source_info.
-            \n
-
+          pre
+            code.language-javascript.
+              accordionWithLinks({
+                tadam: '.panel-group'
+              });
+          h3#options All supported params:
+          pre
+            code.language-javascript.
+              accordionWithLinks({
+                tadam: '.panel-group',
+                duration: 400,
+                easing: 'swing',
+                divHeading: '.panel-heading',
+                divCollapse: '.collapse'
+              });
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=', crossorigin='anonymous')
-    script(src='bower_components/tether/dist/js/tether.min.js')
-    script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
-    script(src='node_modules/prismjs/prism.js')
-    script(src='src/accordion.js')
-    script(src='src/main.js')
+    script(src='tether.min.js')
+    script(src='bootstrap.min.js')
+    script(src='prism.js')
+    script(src='accordion.js')
+    script(src='main.js')

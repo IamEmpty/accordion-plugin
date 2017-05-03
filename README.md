@@ -1,5 +1,5 @@
 # Accordion.js
-Simple accordion.js based on Bootstrap 4 accordion providing possibility to add hash of opened tab
+Simple accordion.js inspired by Bootstrap 4 accordion providing possibility to add hash of opened tab
 
 ## Differences with Bootstrap collapse accordion
 Possibility to use hashes in url
@@ -10,8 +10,10 @@ Just put at the end of body.
   <script src="accordion.min.js"></script>
 </body>
 ```
-
-After this you need initialize
+And initialize
+```javascript
+accordionWithLinks();
+```
 
 ## Contribution
 

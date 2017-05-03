@@ -13,21 +13,7 @@ gulp.task('dev', dev);
 gulp.task('build', build);
 gulp.task('default', dev);
 
-function copy() {
-  const toCopy = [
-    'src/*.js',
-    'index.html',
-    'bower_components/bootstrap/dist/css/bootstrap.min.css',
-    'node_modules/prismjs/themes/prism.css',
-    'bower_components/tether/dist/js/tether.min.js',
-    'bower_components/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/prismjs/prism.js',
-  ];
-  return gulp.src(toCopy, { base: '.' })
-    .pipe(gulp.dest(paths.build));
-}
-
-gulp.task('deploy', gulp.series(copy, () =>
+gulp.task('deploy', gulp.series(build, () =>
   gulp.src(`${paths.build} + **/*`)
     .pipe(ghPages())
 ));
