@@ -42,9 +42,9 @@ function serve() {
   browserSync.init({
     server: {
       baseDir: paths.dev,
-      index: 'index.html'
+      index: 'index.html',
     },
-    browser: ['google chrome', 'chrome']
+    browser: ['google chrome', 'chrome'],
   });
 
   gulp.watch(paths.lessWatch, css);
