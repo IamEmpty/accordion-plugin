@@ -13,6 +13,3 @@ build/
 # Node
 node_modules/
 *.log
-
-# Bower
-bower_components/

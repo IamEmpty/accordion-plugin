@@ -6,12 +6,12 @@ const gulp = require('gulp'),
   del = require('del');
 
 const clean = () => del([paths.build, paths.dev, paths.deploy]);
-exports.clean = clean;
 
+exports.clean = clean;
+exports.dev = dev;
+exports.build = build;
 // The default task (called when you run `gulp` from cli)
-gulp.task('dev', dev);
-gulp.task('build', build);
-gulp.task('default', dev);
+exports.default = dev;
 
 gulp.task('deploy', gulp.series(build, () =>
   gulp.src(`${paths.build} + **/*`)
