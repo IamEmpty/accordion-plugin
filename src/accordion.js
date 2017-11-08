@@ -3,8 +3,8 @@
     const defaults = {
       duration: 500,
       easing: 'swing',
-      divHeading: '.card-header',  // Div which we need tracking on click
-      divCollapse: '.show',        // Div which we need to hide or show on click
+      divHeading: '.card-header', // Div which we need tracking on click
+      divCollapse: '.show', // Div which we need to hide or show on click
       show: '.show',
     };
 

@@ -7,7 +7,7 @@ build/
 # Deploy
 .publish
 
-# WebStorm
+# WebStorm IDE specific files
 .idea/
 
 # Node
