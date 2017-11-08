@@ -16,16 +16,14 @@ module.exports = {
     },
     less: 'src/main.less',
     lessWatch: 'src/*.less',
-    js: [
-      'src/*.js',
-      'node_modules/prismjs/prism.js',
-    ],
     copy: [
+      'src/*.js',
+      'node_modules/jquery/dist/jquery.min.js',
       'node_modules/bootstrap/dist/css/bootstrap.css',
       'node_modules/bootstrap/dist/css/bootstrap.css.map',
       'node_modules/prismjs/themes/prism.css',
-      'node_modules/tether/dist/js/tether.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.js',
+      'node_modules/prismjs/prism.js',
     ],
     copyToDist: [
       'node_modules/tether/dist/js/tether.min.js',
