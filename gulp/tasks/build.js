@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const config = require('../config');
-
-const paths = config.paths;
 const plugins = require('gulp-load-plugins')();
+
+const { paths } = config;
 
 // Get one .less file and render
 function css() {

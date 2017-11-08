@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const ghPages = require('gulp-gh-pages');
-const paths = require('./gulp/config').paths;
+const { paths } = require('./gulp/config');
 const dev = require('./gulp/tasks/dev');
 const build = require('./gulp/tasks/build');
 const del = require('del');
@@ -15,5 +15,4 @@ exports.default = dev;
 
 gulp.task('deploy', gulp.series(build, () =>
   gulp.src(`${paths.build} + **/*`)
-    .pipe(ghPages()),
-));
+    .pipe(ghPages())));

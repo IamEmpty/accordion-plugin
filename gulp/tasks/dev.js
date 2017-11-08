@@ -1,8 +1,9 @@
-const gulp = require('gulp'),
-  config = require('../config'),
-  paths = config.paths,
-  plugins = require('gulp-load-plugins')(),
-  browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const config = require('../config');
+const plugins = require('gulp-load-plugins')();
+const browserSync = require('browser-sync').create();
+
+const { paths } = config;
 
 // Get one .less file and render
 function css() {
